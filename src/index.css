@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Romantic";
+  src: url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  /* A very soft mesh gradient for that "romantic haze" */
+  background: radial-gradient(circle at 50% 50%, #fff1f2 0%, #ffe4e6 100%);
+}
+
+/* Optional: Make all your pink text use a romantic font */
+.romantic-text {
+  font-family: "Dancing Script", cursive;
+}
