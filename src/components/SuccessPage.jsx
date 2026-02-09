@@ -366,18 +366,20 @@ const SuccessPage = () => {
       )}
 
       {/* Love Note Popup */}
-      {showLoveNote && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, y: 50 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.8, y: 50 }}
-          className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-rose-400 to-pink-500 text-white px-6 py-4 rounded-full shadow-2xl max-w-md mx-4"
-        >
-          <p className="text-center font-medium text-sm md:text-base">
-            {loveNotes[currentLoveNote]}
-          </p>
-        </motion.div>
-      )}
+   {/* Love Note Popup */}
+{showLoveNote && (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.8, y: 50 }}
+    animate={{ opacity: 1, scale: 1, y: 0 }}
+    exit={{ opacity: 0, scale: 0.8, y: 50 }}
+    className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-rose-400 to-pink-500 text-white px-4 sm:px-6 py-2 sm:py-4 rounded-2xl shadow-2xl max-w-[90%] sm:max-w-md"
+  >
+    <p className="text-center font-medium text-xs sm:text-sm md:text-base">
+      {loveNotes[currentLoveNote]}
+    </p>
+  </motion.div>
+)}
+
 
       {/* Memory Popup */}
       {showMemory && (
